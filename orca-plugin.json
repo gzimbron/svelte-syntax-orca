@@ -1,0 +1,33 @@
+{
+  "$schema": "https://raw.githubusercontent.com/stablyai/orca/main/docs/schemas/plugins/orca-plugin.v2.schema.json",
+  "manifestVersion": 2,
+  "execution": "data",
+  "id": "svelte-syntax",
+  "name": "Svelte Syntax",
+  "version": "1.0.0",
+  "description": "Self-contained syntax highlighting for Svelte components (.svelte).",
+  "author": {
+    "name": "Gustavo Zimbr\u00f3n",
+    "url": "https://github.com/gzimbron"
+  },
+  "repository": "https://github.com/gzimbron/svelte-syntax-orca",
+  "license": "MIT",
+  "engines": {
+    "orca": ">=1.4.246"
+  },
+  "capabilities": [],
+  "contributes": {
+    "syntaxes": [
+      {
+        "id": "svelte",
+        "title": "Svelte",
+        "scopeName": "text.html.svelte",
+        "path": "syntaxes/svelte.tmLanguage.json",
+        "configuration": "syntaxes/language-configuration.json",
+        "extensions": [
+          ".svelte"
+        ]
+      }
+    ]
+  }
+}

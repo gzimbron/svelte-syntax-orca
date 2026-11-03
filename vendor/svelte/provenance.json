@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/sveltejs/language-tools",
+  "commit": "e7826d325d734e6be6bfd7694acc3804ea264a1e",
+  "sourcePath": "packages/svelte-vscode/syntaxes/svelte.tmLanguage.src.yaml",
+  "sourceUrl": "https://raw.githubusercontent.com/sveltejs/language-tools/e7826d325d734e6be6bfd7694acc3804ea264a1e/packages/svelte-vscode/syntaxes/svelte.tmLanguage.src.yaml",
+  "licenseUrl": "https://raw.githubusercontent.com/sveltejs/language-tools/e7826d325d734e6be6bfd7694acc3804ea264a1e/LICENSE",
+  "conversion": "ruby -r yaml -r json -e 'source = YAML.safe_load(File.read(\"vendor/svelte/svelte.tmLanguage.src.yaml\")); File.write(\"vendor/svelte/svelte.tmLanguage.json\", JSON.pretty_generate(source) + \"\\n\")'",
+  "convertedJson": "svelte.tmLanguage.json",
+  "adaptation": "../../scripts/adapt-svelte.mjs",
+  "embeddedRules": "orca-embedded.json preserves the prior local JS/TS/CSS rules, originally adapted from the companion Vue.js Syntax plugin by Gustavo Zimbrón (MIT).",
+  "typescriptNotice": "Upstream attributes-generics/type-parameters credits microsoft/TypeScript-TmLanguage; TypeScript-TmLanguage-LICENSE.txt retained from https://raw.githubusercontent.com/microsoft/TypeScript-TmLanguage/master/LICENSE.txt (license only, not grammar source)."
+}
